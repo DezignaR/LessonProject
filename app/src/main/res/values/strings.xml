@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">exampleProject</string>
+    <string name="ThanksForOrder">СПАСИБО ЗА ЗАКАЗ!</string>
+    <string name="CancellationOrder">Отменить заказ</string>
+    <string name="numberOrder">№ 0001</string>
+    <string name="TimeOrderView">Время</string>
+    <string name="NumOrderView">Номер заказа</string>
+    <string name="SumOrderView">Сумма заказа</string>
+    <string name="TimeCompletedView">Заказ будет готов через</string>
+    <string name="AddressView">Адрес доставки</string>
+    <string name="TimeOrder">12 января, 10:00</string>
+    <string name="AddressOrder">Ул. Василенко 12, 1п., 4 этаж кв. 111</string>
+    <string name="TimeCompleted">60 минут</string>
+    <string name="SumOrder">8 товаров, 430 ₽</string>
+
 </resources>
