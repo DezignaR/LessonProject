@@ -193,10 +193,10 @@
         android:text="@string/buttonMenu"
         android:textAllCaps="true"
         android:textSize="@dimen/font_medium"
+        android:textColor="@color/white"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:rippleColor="@color/white" />
+        app:layout_constraintStart_toStartOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
