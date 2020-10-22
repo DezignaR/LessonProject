@@ -7,47 +7,48 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/CancellationOrder"
+        android:id="@+id/cancellationOrder"
         android:layout_width="wrap_content"
-        android:layout_height="@dimen/space_smedium"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/toolbar_height"
         android:layout_marginEnd="@dimen/space_smedium"
-        android:text="@string/CancellationOrder"
+        android:text="@string/cancellation_order"
         android:textSize="@dimen/font_tiny"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/ThanksForOrder"
+        android:id="@+id/thanksForOrder"
         android:layout_width="@dimen/match_constraint"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_medium"
-        android:text="@string/ThanksForOrder"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/thanks_for_order"
         android:textAlignment="center"
+        android:textAllCaps="true"
         android:textColor="@color/black"
         android:textSize="@dimen/font_large"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CancellationOrder" />
+        app:layout_constraintTop_toBottomOf="@+id/cancellationOrder" />
 
     <TextView
         android:id="@+id/numberOrder"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
         android:gravity="center"
-        android:text="@string/numberOrder"
+        android:text="@string/number_order"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="@dimen/font_large"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/ThanksForOrder"
-        app:layout_constraintTop_toBottomOf="@+id/ThanksForOrder" />
+        app:layout_constraintStart_toStartOf="@+id/thanksForOrder"
+        app:layout_constraintTop_toBottomOf="@+id/thanksForOrder" />
 
     <View
-        android:id="@+id/Line1"
+        android:id="@+id/horizontalLine1"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="@dimen/space_line"
         android:layout_marginTop="@dimen/space_smedium"
@@ -57,127 +58,126 @@
         app:layout_constraintTop_toBottomOf="@+id/numberOrder" />
 
     <TextView
-        android:id="@+id/TimeOrderView"
+        android:id="@+id/timeOrderView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/space_medium"
         android:layout_marginTop="@dimen/space_xsmedium"
-        android:text="@string/TimeOrderView"
+        android:text="@string/time_order_view"
         android:textSize="@dimen/font_small"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Line1" />
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine1" />
 
     <TextView
-        android:id="@+id/TimeOrder"
+        android:id="@+id/timeOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/space_smedium"
         android:layout_marginRight="@dimen/space_smedium"
-        android:text="@string/TimeOrder"
+        android:text="@string/time_order"
         android:textColor="@color/red"
         android:textSize="@dimen/font_small"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/TimeOrderView" />
+        app:layout_constraintTop_toTopOf="@+id/timeOrderView" />
 
     <TextView
-        android:id="@+id/NumOrderView"
+        android:id="@+id/numOrderView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_large"
-        android:text="@string/NumOrderView"
+        android:text="@string/num_order_view"
         android:textSize="@dimen/font_small"
-        app:layout_constraintStart_toStartOf="@+id/TimeOrderView"
-        app:layout_constraintTop_toBottomOf="@+id/TimeOrderView" />
+        app:layout_constraintStart_toStartOf="@+id/timeOrderView"
+        app:layout_constraintTop_toBottomOf="@+id/timeOrderView" />
 
     <TextView
-        android:id="@+id/NumOrder"
+        android:id="@+id/numOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/numberOrder"
+        android:text="@string/number_order"
         android:textColor="@color/red"
         android:textSize="@dimen/font_small"
-        app:layout_constraintEnd_toEndOf="@+id/TimeOrder"
-        app:layout_constraintTop_toTopOf="@+id/NumOrderView" />
+        app:layout_constraintEnd_toEndOf="@+id/timeOrder"
+        app:layout_constraintTop_toTopOf="@+id/numOrderView" />
 
     <TextView
-        android:id="@+id/SumOrderView"
+        android:id="@+id/sumOrderView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_large"
-        android:text="@string/SumOrderView"
+        android:text="@string/sum_order_view"
         android:textSize="@dimen/font_small"
-        app:layout_constraintStart_toStartOf="@+id/NumOrderView"
-        app:layout_constraintTop_toBottomOf="@+id/NumOrderView" />
+        app:layout_constraintStart_toStartOf="@+id/numOrderView"
+        app:layout_constraintTop_toBottomOf="@+id/numOrderView" />
 
     <TextView
-        android:id="@+id/SumOrder"
+        android:id="@+id/sumOrder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/SumOrder"
+        android:text="@string/sum_order"
         android:textColor="@color/red"
         android:textSize="@dimen/font_small"
-        app:layout_constraintEnd_toEndOf="@+id/NumOrder"
-        app:layout_constraintTop_toTopOf="@+id/SumOrderView" />
+        app:layout_constraintEnd_toEndOf="@+id/numOrder"
+        app:layout_constraintTop_toTopOf="@+id/sumOrderView" />
 
     <TextView
-        android:id="@+id/TimeCompletedView"
+        android:id="@+id/timeCompletedView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_large"
-        android:text="@string/TimeCompletedView"
+        android:text="@string/time_completed_view"
         android:textSize="@dimen/font_small"
-        app:layout_constraintStart_toStartOf="@+id/SumOrderView"
-        app:layout_constraintTop_toBottomOf="@+id/SumOrderView" />
+        app:layout_constraintStart_toStartOf="@+id/sumOrderView"
+        app:layout_constraintTop_toBottomOf="@+id/sumOrderView" />
 
     <TextView
-        android:id="@+id/TimeCompleted"
+        android:id="@+id/timeCompleted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/TimeCompleted"
+        android:text="@string/time_completed"
         android:textColor="@color/red"
         android:textSize="@dimen/font_small"
-        app:layout_constraintEnd_toEndOf="@+id/SumOrder"
-        app:layout_constraintTop_toTopOf="@+id/TimeCompletedView" />
+        app:layout_constraintEnd_toEndOf="@+id/sumOrder"
+        app:layout_constraintTop_toTopOf="@+id/timeCompletedView" />
 
     <View
-        android:id="@+id/Line2"
+        android:id="@+id/horizontalLine2"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="@dimen/space_line"
         android:layout_marginTop="@dimen/space_medium"
         android:background="@color/grey"
         android:textSize="@dimen/font_small"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TimeCompletedView" />
+        app:layout_constraintTop_toBottomOf="@+id/timeCompletedView" />
 
     <TextView
-        android:id="@+id/AddressView"
+        android:id="@+id/addressView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_medium"
-        android:text="@string/AddressView"
+        android:text="@string/address_view"
         android:textSize="@dimen/font_small"
-        app:layout_constraintStart_toStartOf="@+id/TimeCompletedView"
-        app:layout_constraintTop_toBottomOf="@+id/Line2" />
+        app:layout_constraintStart_toStartOf="@+id/timeCompletedView"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalLine2" />
 
     <TextView
-        android:id="@+id/AddressOrder"
-        android:layout_width="395dp"
-        android:layout_height="19dp"
+        android:id="@+id/addressOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/space_medium"
-        android:text="@string/AddressOrder"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/address_order"
         android:textColor="@color/black"
         android:textSize="@dimen/font_small"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/AddressView"
-        app:layout_constraintTop_toBottomOf="@+id/AddressView" />
+        app:layout_constraintStart_toStartOf="@+id/addressView"
+        app:layout_constraintTop_toBottomOf="@+id/addressView" />
 
     <View
-        android:id="@+id/Line3"
+        android:id="@+id/horizontalLine3"
         android:layout_width="@dimen/match_constraint"
         android:layout_height="@dimen/space_line"
-        android:layout_marginTop="272dp"
         android:layout_marginBottom="@dimen/space_smedium"
         android:background="@color/grey"
         app:layout_constraintBottom_toTopOf="@+id/buttonMenu"
@@ -186,11 +186,12 @@
     <Button
         android:id="@+id/buttonMenu"
         android:layout_width="@dimen/match_constraint"
-        android:layout_height="53dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/space_smedium"
         android:layout_marginRight="@dimen/space_smedium"
         android:layout_marginBottom="@dimen/space_smedium"
-        android:text="ПЕРЕЙТИ В МЕНЮ"
+        android:text="@string/buttonMenu"
+        android:textAllCaps="true"
         android:textSize="@dimen/font_medium"
         app:backgroundTint="@color/green"
         app:layout_constraintBottom_toBottomOf="parent"
