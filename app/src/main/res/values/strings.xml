@@ -2,16 +2,16 @@
     <string name="app_name">exampleProject</string>
     <string name="thanks_for_order">Спасибо за заказ!</string>
     <string name="cancellation_order">Отменить заказ</string>
-    <string name="number_order">№ 0001</string>
     <string name="time_order_view">Время</string>
     <string name="num_order_view">Номер заказа</string>
     <string name="sum_order_view">Сумма заказа</string>
     <string name="time_completed_view">Заказ будет готов через</string>
     <string name="address_view">Адрес доставки</string>
-    <string name="time_order">12 января, 10:00</string>
-    <string name="address_order">Ул. Василенко 12, 1п., 4 этаж кв. 111</string>
-    <string name="time_completed">60 минут</string>
-    <string name="sum_order">8 товаров, 430 ₽</string>
     <string name="buttonMenu">Перейти в меню</string>
+    <string name="number_order">№%1$s</string>
+    <string name="sum_order">%1$s товаров, %2$d ₽</string>
+    <string name="time_completed">%1$i минут</string>
+    <string name="address_order">Ул. %1$s %2$s, %3$sп., %4$s этаж, кв.%5$s</string>
+    <string name="time_order">%1$s</string>
 
 </resources>

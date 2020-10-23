@@ -9,15 +9,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var test_time_order = "21 октября, 12:00"
-        var test_sum_order = 450.0
-        var test_count_goods = 8
-        var test_street: String = "Василенко"
-        var test_home_number: String = "21/1"
-        var test_entrance: String = "4"
-        var test_floor: String = "4"
-        var test_apartment: String = "112"
-        var test_time_comleted: Int = 60
+        val testTimeOrder: String = "21 октября, 12:00"
+        val testSumOrder = 450.0
+        val testCountGoods = 8
+        val testStreet: String = "Василенко"
+        val testHomeNumber: String = "21/1"
+        val testEntrance: String = "4"
+        val testFloor: String = "4"
+        val testApartment: String = "112"
+        val testTimeCompleted: Int = 60
 
         data class Order(
             val numberOrder: Int,
@@ -32,36 +32,42 @@ class MainActivity : AppCompatActivity() {
             val timeCompleted: Int
         )
 
+
         fun createTestClass(): Order {
 
-            val order1 = Order(
+            return Order(
                 1,
-                test_time_order,
-                test_sum_order,
-                test_count_goods,
-                test_street,
-                test_home_number,
-                test_entrance,
-                test_floor,
-                test_apartment,
-                test_time_comleted
+                testTimeOrder,
+                testSumOrder,
+                testCountGoods,
+                testStreet,
+                testHomeNumber,
+                testEntrance,
+                testFloor,
+                testApartment,
+                testTimeCompleted
             )
-            return order1
-        }
-
-        fun pushTestData(order: Order) {
-            numberOrder.text = order.numberOrder.toString()
-            timeOrder.text = order.timeOrder.toString()
-            numOrder.text = order.numberOrder.toString()
-            sumOrder.text = "${order.countGoods.toString()} товаров,  ${order.sumOrder.toString()}"
-            timeCompleted.text = "${order.timeCompleted.toString()} минут"
-            addressOrder.text = "Ул. ${order.street} ${order.homeNumber}, ${order.entrance}п., ${order.floor} этаж, кв.${order.apartment}"
-
-
-
         }
 
         val order = createTestClass()
+
+        fun pushTestData(order: Order) {
+            numberOrder.text = getString(R.string.number_order, order.numberOrder.toString())
+            timeOrder.text = getString(R.string.time_order, order.timeOrder)
+            sumOrder.text =
+                getString(R.string.sum_order, order.countGoods.toString(), order.sumOrder)
+            timeCompleted.text = getString(R.string.time_completed, order.timeCompleted)
+            addressOrder.text = getString(
+                R.string.address_order,
+                order.street,
+                order.homeNumber,
+                order.entrance,
+                order.floor,
+                order.apartment
+            )
+
+        }
+
         pushTestData(order)
     }
 }
