@@ -8,9 +8,9 @@
     <string name="time_completed_view">Заказ будет готов через</string>
     <string name="address_view">Адрес доставки</string>
     <string name="buttonMenu">Перейти в меню</string>
-    <string name="number_order">№%1$s</string>
-    <string name="sum_order">%1$s товаров, %2$d ₽</string>
-    <string name="time_completed">%1$i минут</string>
+    <string name="number_order">№ %1$d</string>
+    <string name="sum_order">%1$d товаров, %2$.0f ₽</string>
+    <string name="time_completed">%1$d минут</string>
     <string name="address_order">Ул. %1$s %2$s, %3$sп., %4$s этаж, кв.%5$s</string>
     <string name="time_order">%1$s</string>
 
